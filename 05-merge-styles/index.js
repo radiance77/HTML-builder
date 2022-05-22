@@ -12,7 +12,7 @@ async function buildBundleFile() {
       withFileTypes: true,
     });
 
-    const arrFileStyles = [];
+    let arrFileStyles = [];
 
     for (const file of distFiles) {
       let { name } = file;
